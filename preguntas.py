@@ -18,7 +18,8 @@ def pregunta_01():
     -------------------------------------------------------------------------------------
     """
     # Lea el archivo `insurance.csv` y asignelo al DataFrame `df`
-     df = read_data("insurance.csv")
+     df = pd.read_csv("insurance.csv", sep=",")
+
 
     # Asigne la columna `charges` a la variable `y`.
     y = df["charges"]
