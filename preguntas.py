@@ -25,10 +25,10 @@ def pregunta_01():
     y = df["charges"]
 
     # Asigne una copia del dataframe `df` a la variable `X`.
-    X = df.copy(deep=True)
+    X = df.copy()
 
     # Remueva la columna `charges` del DataFrame `X`.
-    X.drop(labels=['charges'],axis=1,inplace=True)
+    X.pop(['charges'])
 
     # Retorne `X` y `y`
     return X, y
